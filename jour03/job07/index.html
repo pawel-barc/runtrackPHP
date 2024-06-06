@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action = "process.php" method = "post">
+        <label for="fonction">Choissiez une option:</label>
+        <input type="text" id="str" name="str" required><br><br>
+        <select id="fonction" name="fonction">
+            <option value = "gras">gras</option>
+            <option value = "cesar">césar</option>
+            <option value = "plateforme">plateforme</option>
+        </select><br><br>
+        <button type="submit">Transformer</button>
+    </form>    
+</body>
+</html>
