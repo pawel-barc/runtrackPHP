@@ -3,7 +3,7 @@ if(isset($_POST['reset'])){
     setcookie("nbVisites", 0, time() -3600);
     $nbVisites =0;
 }else{
-    if(isset($_POST["nbVisites"])){
+    if(isset($_COOKIE["nbVisites"])){
         $nbVisites = $_COOKIE["nbVisites"] + 1;
     }else{
         $nbVisites = 0;
@@ -20,8 +20,8 @@ if(isset($_POST['reset'])){
 </head>
 <body>
     <p>Nombres de visites : <?php echo $nbVisites; ?></p>
-    <form method "post">
-        <button type "submit" name "reset">Reset</button>
+    <form method = "post">
+        <button type = "submit" name = "reset">Reset</button>
     </form>    
 </body>
 </html>
